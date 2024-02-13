@@ -1,12 +1,11 @@
 {
   "name": "stealthy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "This is a small package to make stealth browser-like requests.",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/test.js",
-    "build": "rollup -c"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,7 @@
   },
   "homepage": "https://github.com/realnessdigital/stealthy#readme",
   "dependencies": {
-    "decompress-response": "^8.1.0",
+    "decompress-response-browserify": "^1.0.0",
     "header-generator": "^2.1.48",
     "http2-wrapper": "^2.2.1",
     "qs": "^6.11.2",

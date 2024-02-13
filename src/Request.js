@@ -1,5 +1,5 @@
 import http2 from 'http2-wrapper';
-import decompressResponse from 'decompress-response';
+import decompressResponse from 'decompress-response-browserify';
 import { HeaderGenerator } from 'header-generator';
 import URL from 'url-parse';
 import { stringify as queryStringify } from 'qs';
@@ -53,15 +53,7 @@ export const request = (url, options = {}) => new Promise((resolve, reject) => {
 	}, (response) => {
 		let body = "";
 
-		console.log({
-
-			hostname: url.hostname,
-			protocol: url.protocol,
-			path: `${url.pathname}${(options.params)? queryStringify(options.params) : url.query}`,
-			method: 'GET',
-			...options
-
-		})
+		console.log(response.responseCode)
 
 		response = decompressResponse(response);
 		response.on('data', chunk => body += chunk);
