@@ -1,0 +1,34 @@
+{
+  "name": "stealthy",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "This is a small package to make stealth browser-like requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/test.js",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realnessdigital/stealthy.git"
+  },
+  "keywords": [
+    "request",
+    "http2",
+    "browserlike",
+    "stealth"
+  ],
+  "author": "rlns.de",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realnessdigital/stealthy/issues"
+  },
+  "homepage": "https://github.com/realnessdigital/stealthy#readme",
+  "dependencies": {
+    "decompress-response": "^8.1.0",
+    "header-generator": "^2.1.48",
+    "http2-wrapper": "^2.2.1",
+    "qs": "^6.11.2",
+    "url-parse": "^1.5.10"
+  }
+}
